@@ -20,5 +20,6 @@ function result(){
   if(document.getElementById('correct3').checked) {
     score++;
   }
-  alert("Sua pontuação é :"+score);
+  document.getElementById("resultado").innerHTML = " Sua pontuação é : " +score;
+ // alert("Sua pontuação é :"+score);
 }
