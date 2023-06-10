@@ -1,3 +1,76 @@
-/*
-  Aqui vai os estilos
-*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(25, 25, 25);
+}
+
+.line {
+  border-right: 2px solid green;
+  color: green;
+  font-family: monospace;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-animation {
+  animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
+}
+
+
+@keyframes typing{
+ from{
+  width: 0;
+ }
+ to {
+  width: 16em;
+ }
+
+ }
+
+
+@keyframes  blinkCursor{
+  from {
+    border-right-color: green;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+.container-quiz {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.container {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 450px;
+  padding: 40px;
+  display: none;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(12, 10, 10);
+  color: green;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 10px;
+}

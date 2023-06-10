@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section>
+  <p class="line typing-animation"> Você entende tudo sobre Javascript?
+</section>
+
+
+
+  <div class="container-quiz">
+    <div class="container">
+      Q1 O valor de uma constante pode ser mudado após sua declaração?
+      <hr>
+      <input type="radio" name="question1">Sim, desde que a constante não tenha sido usada.<br>
+      <input type="radio" name="question1" id="correct1">Não, uma vez o valor não pode ser modificado.<br>
+      <input type="radio" name="question1">Sim, uma constate pode ter seu valor mutável.<br>
+      <button class="next" onclick="next(1)">Próxima</button>
+    </div>
+
+    <div class="container">
+      Q2 Qual objetivo literal abaixo está correto
+      <hr>
+      <input type="radio" name="question2">VAR obj = { nome = 'nome' }<br>
+      <input type="radio" name="question2">VAR obj = nome = 'Meu nome'<br>
+      <input type="radio" name="question2" id="correct2"" >VAR obj { nome : ' meu nome ' } <br>
+      <button class=" next" onclick="next(2)">Próxima</button>
+    </div>
+
+    <div class="container">
+      Q3 Qual definição de array está correta?
+      <hr>
+      <input type="radio" name="question3">VAR frutas = (array) list (maçã <br>
+      <input type="radio" name="question3">VAR frutas<br>
+      <input type="radio" name="question3" id="correct3">VAR frutas = ['maçã', 'uva'];<br>
+      <button onclick="result()">Finalizar Quiz</button>
+    </div>
+
+
+  </div>
+  <div id="root"></div>
+  <script src="main.js"></script>
+</body>
+
 </html>
