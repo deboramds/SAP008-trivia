@@ -9,51 +9,68 @@
 </head>
 
 <body>
+  <div class="container-init">
 
 <section>
-  <p class="line typing-animation"> Você entende tudo sobre Javascript?
-    <div class="resultado-final" id="resultado">
-      <img src="Imagens/Jim-programador.gif"
-  </div>
+  <p class="line typing-animation"> Você entende tudo sobre Javascript? Então vamos testar seus conhecimentos no quiz abaixo
+   
+     
 </section>
-
 
 
   <div class="container-quiz">
     <div class="container">
-      Q1 O valor de uma constante pode ser mudado após sua declaração?
-      <hr>
-      <input type="radio" name="question1">Sim, desde que a constante não tenha sido usada.<br>
-      <input type="radio" name="question1" id="correct1">Não, uma vez o valor não pode ser modificado.<br>
-      <input type="radio" name="question1">Sim, uma constate pode ter seu valor mutável.<br>
-      <button class="next" onclick="next(1)">Próxima</button>
+
+      <h3 class="questao-1"> Q1. O valor de uma constante pode ser mudado após sua declaração?</h3>
+     
+      
+      <div class="alternativas">
+        <label><input type="radio" name="question1"><span>Sim, desde que a constante não tenha sido usada.</span></label><br>
+        <label><input type="radio" name="question1" id="correct1"><span>Não, uma vez o valor não pode ser modificado.</span></label><br>
+        <label><input type="radio" name="question1"><span>Sim, uma constate pode ter seu valor mutável.</span></label><br>
+        <button class="proxima-questao" onclick="next(1)">Próxima</button>
+      </div>
+     
     </div>
 
     <div class="container">
-      Q2 Qual objetivo literal abaixo está correto
-      <hr>
-      <input type="radio" name="question2">VAR obj = { nome = 'nome' }<br>
-      <input type="radio" name="question2">VAR obj = nome = 'Meu nome'<br>
-      <input type="radio" name="question2" id="correct2"" >VAR obj { nome : ' meu nome ' } <br>
-      <button class=" next" onclick="next(2)">Próxima</button>
+     
+     <h3 class="questao-2">Q2. Qual objetivo literal abaixo está correto</h3> 
+      
+      <div class="alternativas">
+      <label><input type="radio" name="question2"><span>obj = { nome = 'nome' }</span></label><br> 
+      <label><input type="radio" name="question2"><span>VAR obj = nome = 'Meu nome'</span></label><br>
+      <label><input type="radio" name="question2" id="correct2"><span>obj { nome : ' meu nome ' }</span></label><br>
+        <button class="proxima-questao" onclick="next(2)">Próxima</button>
+      </div>
+      
     </div>
 
     <div class="container">
-      Q3 Qual definição de array está correta?
-      <hr>
-      <input type="radio" name="question3">VAR frutas = (array) list (maçã <br>
-      <input type="radio" name="question3">VAR frutas<br>
-      <input type="radio" name="question3" id="correct3">VAR frutas = ['maçã', 'uva'];<br>
-      <button onclick="result()">Finalizar Quiz</button>
+      
+      <h3 class="questao-3">Q3. Qual definição de array está correta?</h3>
+      
+      
+      <div class="alternativas">
+        <label><input type="radio" name="question3">VAR frutas = (array) list (maçã </span></label><br>
+        <label><input type="radio" name="question3">VAR frutas</span></label><br>
+        <label><input type="radio" name="question3" id="correct3"><span>frutas = ['maçã', 'uva'];</span></label><br>
+        <button class="botao-finalizar" onclick="result()">Finalizar Quiz</button>
+      </div>
+     
     </div>
 
- 
+  <div class="result">
+    <p class="line typing-animation-2" id="resultado"></p>   
+    <span className="cursor-blink"></span>
+  </div>
+
+  </div>
 
   </div>
   <div id="root"></div>
   <script src="main.js"></script>
 
-  <footer>Copyright by © Débora Martins</footer>
 </body>
 
 

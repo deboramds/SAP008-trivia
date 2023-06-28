@@ -10,14 +10,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: rgb(25, 25, 25);
+  background-image: url(Imagens/background.png);
+}
+
+.container-init {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .line {
   border-right: 2px solid green;
   color: green;
   font-family: monospace;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   margin: 0 auto;
   white-space: nowrap;
@@ -25,7 +31,7 @@ body {
 }
 
 .typing-animation {
-  animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
+  animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 5s normal;
 }
 
 
@@ -53,33 +59,49 @@ body {
 
 .container-quiz {
   display: flex;
+  justify-content: center;
+  text-align: center;
   height: 100%;
   width: 100%;
   flex-direction: column;
 }
 
 .container {
-  border: 3px solid black;
-  border-radius: 10px;
-  width: 450px;
-  padding: 40px;
+  width: 800px;
+  padding: 40px 20px 0 0;
   display: none;
-  text-align: center;
   margin: auto;
-  background-color: rgb(12, 10, 10);
   color: green;
   font-size: 20px;
 }
 
-button {
-  margin-top: 10px;
-  color: green;
-  font-weight: ;
+.questao-1{
+   left: 200%;
 }
 
-.resultado-final {
+.questao-1, .questao-2, .questao-3 {
+  color: #cb6ce6;
+  white-space: nowrap;
+  /* padding: 20px; */
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+
+.proxima-questao, .bortao-finalizar {
+  margin-top: 10px;
+  color: green;
+}
+
+.result {
+  width: 100%;
+  /* padding: 20px; */
+ 
+}
+
+.line typing-animation-2 {
+  animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
   font-size: 70px;
   color: green;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }

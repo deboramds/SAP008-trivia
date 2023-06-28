@@ -1,11 +1,11 @@
 # Trivia
 # Quiz de Javascript
 
-[Link do Projeton em funcionamento refatorado ] (https://deboramds.github.io/SAP008-trivia2/src/index.html)
+# [ Link do Projeton em funcionamento refatorado] (https://deboramds.github.io/SAP008-trivia2/src/index.html)
 
 ## Essa é a Versão refatorado do projeto Trivia, feito para a semana de pré-admissao do bootcamp da Laboratório
  
- [link do projeto em funcionamento antigo anterior as alterações] (https://deboramds.github.io/Trivia/)
+ # [ link do projeto em funcionamento antigo anterior as alterações] (https://deboramds.github.io/Trivia/)
 
 
 ## Índice
